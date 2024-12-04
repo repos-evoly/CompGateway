@@ -1,27 +1,35 @@
 {
-    "sidebarItems": {
-        "title": "نظام الفوترة",
-        "contact": "جهة اتصال جديدة",
-        "contract": "عقد جديد",
-        "accounts": "الحسابات",
-        "invoice": {
-          "label": "فاتورة جديدة",
-          "purchase": "فاتورة شراء",
-          "sales": "فاتورة مبيعات"
-        },
-        "chart": "شجرة الحسابات",
-        "currencies": "العملات",
-        "journal": "دفتر اليومية",
-        "products": "المنتجات",
-        "financial": {
-          "label": "البيانات المالية",
-          "accounts": "كشف الحسابات",
-          "trialBalance": "ميزان المراجعة",
-          "balanceSheet": "الميزانية العمومية"
-        },
-        "logout": "تسجيل الخروج"
-      },
-      "mainHeader":{
-        "title":"منظومة بوابة الشركات"
-      }
+  "sidebarItems": {
+    "statementOfAccount":"كشف حساب",
+    "title": "",
+    "transfer":{
+        "label": "التحاويل",
+        "inBank": "تحويل داخل المصرف",
+        "betweenBanks": "تحويل بين المصارف",
+        "out":"تحويل خارجي"
+    },
+    "requests":{
+      "label":"الطلبات",
+      "checkBook":"طلب دفتر صكوك",
+      "certifiedCheck":"طلب صك مصدق",
+      "guaranteeLetter":"طلب خطاب ضمان",
+      "creditFacility":"طلب تسهيل ائتماني",
+      "visa":"طلب بطاقة VISA",
+      "rtes":"طلب حوالة RTES",
+      "foreign":"طلب اصدار رخصة للحوالات الخارجية",
+      "cbl":"طلب استفسار عن CBL"
+    },
+    "localization":"توطين المعاشات",
+    "documentary":"اعتمادات مستندية",
+    "followUp":"متابعة الطلبات",
+    "settings":"الإعدادات",
+    "currRate":"اسعار صرف العملات",
+
+    "logout":"تسجيل الخروج"
+  },
+
+  "mainHeader":{
+    "title":"منظومة بوابة الشركات"
+  }
+
 }

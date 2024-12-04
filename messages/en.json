@@ -1,28 +1,35 @@
 {
-    "sidebarItems": {
-        "title": "Invoicing System",
-        "contact": "New Contact",
-        "contract": "New Contract",
-        "accounts": "Accounts",
-        "invoice": {
-          "label": "New Invoice",
-          "purchase": "Purchase Invoice",
-          "sales": "Sales Invoice"
-        },
-        "chart": "Chart of Accounts",
-        "currencies": "Currencies",
-        "journal": "Journal",
-        "products": "Products",
-        "financial": {
-          "label": "Financial Statements",
-          "accounts": "Statement of Accounts",
-          "trialBalance": "Trial Balance",
-          "balanceSheet": "Balance Sheet"
-        },
-    
-        "logout": "Logout"
-      },
-      "mainHeader":{
-        "title":"Companies Gateway"
-      }
+  "sidebarItems": {
+    "statementOfAccount":"Statement of account",
+    "title": "",
+    "transfer":{
+        "label": "Transfers",
+        "inBank": "Transfers within the bank",
+        "betweenBanks": "Transfers between banks",
+        "out":"External transfers "
+    },
+    "requests":{
+      "label":"Requests",
+      "checkBook":"Request a check book",
+      "certifiedCheck":"Certified Check request",
+      "guaranteeLetter":"Letter of guarantee request",
+      "creditFacility":"Credit facility request",
+      "visa":"visa card Request",
+      "rtes":"RTES transfer request",
+      "foreign":"license for foreign transfers request",
+      "cbl":"CBL Inquiry Request"
+    },
+    "localization":"Localization of salaries",
+    "documentary":"Documentary Credits",
+    "followUp":"Follow Up Requests",
+    "settings":"Settings",
+    "currRate":"Currency exchange rates",
+
+    "logout":"Logout"
+  },
+
+
+  "mainHeader":{
+    "title":"Companies Gateway"
+  }
 }

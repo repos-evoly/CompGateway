@@ -1,3 +1,28 @@
 {
-    "home":"hello en!"
+    "sidebarItems": {
+        "title": "Invoicing System",
+        "contact": "New Contact",
+        "contract": "New Contract",
+        "accounts": "Accounts",
+        "invoice": {
+          "label": "New Invoice",
+          "purchase": "Purchase Invoice",
+          "sales": "Sales Invoice"
+        },
+        "chart": "Chart of Accounts",
+        "currencies": "Currencies",
+        "journal": "Journal",
+        "products": "Products",
+        "financial": {
+          "label": "Financial Statements",
+          "accounts": "Statement of Accounts",
+          "trialBalance": "Trial Balance",
+          "balanceSheet": "Balance Sheet"
+        },
+    
+        "logout": "Logout"
+      },
+      "mainHeader":{
+        "title":"Companies Gateway"
+      }
 }

@@ -1,3 +1,27 @@
 {
-    "home":"hello ar!"
+    "sidebarItems": {
+        "title": "نظام الفوترة",
+        "contact": "جهة اتصال جديدة",
+        "contract": "عقد جديد",
+        "accounts": "الحسابات",
+        "invoice": {
+          "label": "فاتورة جديدة",
+          "purchase": "فاتورة شراء",
+          "sales": "فاتورة مبيعات"
+        },
+        "chart": "شجرة الحسابات",
+        "currencies": "العملات",
+        "journal": "دفتر اليومية",
+        "products": "المنتجات",
+        "financial": {
+          "label": "البيانات المالية",
+          "accounts": "كشف الحسابات",
+          "trialBalance": "ميزان المراجعة",
+          "balanceSheet": "الميزانية العمومية"
+        },
+        "logout": "تسجيل الخروج"
+      },
+      "mainHeader":{
+        "title":"منظومة بوابة الشركات"
+      }
 }

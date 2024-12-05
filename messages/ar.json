@@ -15,7 +15,7 @@
       "guaranteeLetter":"طلب خطاب ضمان",
       "creditFacility":"طلب تسهيل ائتماني",
       "visa":"طلب بطاقة VISA",
-      "rtes":"طلب حوالة RTES",
+      "rtgs":"طلب حوالة RTGS",
       "foreign":"طلب اصدار رخصة للحوالات الخارجية",
       "cbl":"طلب استفسار عن CBL"
     },

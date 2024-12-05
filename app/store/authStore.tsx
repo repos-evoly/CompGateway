@@ -1,5 +1,4 @@
 import { create } from "zustand";
-import { useRouter } from "@/navigation";
 
 interface AuthState {
   token: string | null;

@@ -1,17 +1,18 @@
+import { FaUserPlus, FaWpforms, FaCcVisa } from "react-icons/fa";
+import { MdCurrencyExchange } from "react-icons/md";
+import { BsFillInfoCircleFill } from "react-icons/bs";
+import { BiTransfer } from "react-icons/bi";
+import { PiBankBold, PiCertificateBold, PiMoneyBold } from "react-icons/pi";
 import {
-  FaUserPlus,
-  FaFileContract,
-  FaFileInvoice,
-  FaBox,
-  FaUsers,
-  FaSignOutAlt,
-  FaRegFileAlt, // New icon for "Statement of Accounts"
-  FaBalanceScale, // New icon for "Trial Balance"
-  FaBook, // New icon for "Balance Sheet"
-} from "react-icons/fa";
-import { MdOutlineSwitchAccount } from "react-icons/md";
-import { GrCurrency } from "react-icons/gr";
-import { BsJournalArrowUp } from "react-icons/bs";
+  TbCircleLetterGFilled,
+  TbExternalLink,
+  TbLicense,
+  TbTransferVertical,
+} from "react-icons/tb";
+import { VscPreview, VscRequestChanges } from "react-icons/vsc";
+import { LiaMoneyCheckSolid } from "react-icons/lia";
+import { RiChatFollowUpFill } from "react-icons/ri";
+import { IoIosSettings } from "react-icons/io";
 
 // Define your items without translation logic
 export const sideBarItemsArray = [
@@ -24,26 +25,26 @@ export const sideBarItemsArray = [
   {
     href: "#",
     labelKey: "transfer.label",
-    icon: <FaFileInvoice />, // Updated for Financial Statements
+    icon: <BiTransfer />,
     tip: "transfer.label",
     combo: true,
     subItems: [
       {
         href: "#",
         labelKey: "transfer.inBank",
-        icon: <FaFileInvoice />, // Updated for Statement of Accounts
+        icon: <PiBankBold />,
         tip: "Purchase Invoice",
       },
       {
         href: "#",
         labelKey: "transfer.betweenBanks",
-        icon: <FaFileInvoice />, // Updated for Trial Balance
+        icon: <PiBankBold />,
         tip: "Transfer between banks",
       },
       {
         href: "#",
         labelKey: "transfer.out",
-        icon: <FaFileInvoice />, // Updated for Trial Balance
+        icon: <TbExternalLink />,
         tip: "External transfers",
       },
     ],
@@ -52,56 +53,56 @@ export const sideBarItemsArray = [
   {
     href: "#",
     labelKey: "requests.label",
-    icon: <FaFileInvoice />, // Updated for Financial Statements
+    icon: <VscRequestChanges />,
     tip: "requests.label",
     combo: true,
     subItems: [
       {
         href: "#",
         labelKey: "requests.checkBook",
-        icon: <FaFileInvoice />, // Updated for Statement of Accounts
+        icon: <LiaMoneyCheckSolid />,
         tip: "requests.checkBook",
       },
       {
         href: "#",
         labelKey: "requests.certifiedCheck",
-        icon: <FaFileInvoice />, // Updated for Trial Balance
+        icon: <PiCertificateBold />,
         tip: "requests.certifiedCheck",
       },
       {
         href: "#",
         labelKey: "requests.guaranteeLetter",
-        icon: <FaFileInvoice />, // Updated for Trial Balance
+        icon: <TbCircleLetterGFilled />,
         tip: "requests.guaranteeLetter",
       },
       {
         href: "#",
         labelKey: "requests.creditFacility",
-        icon: <FaFileInvoice />, // Updated for Trial Balance
+        icon: <FaWpforms />,
         tip: "requests.creditFacility",
       },
       {
         href: "#",
         labelKey: "requests.visa",
-        icon: <FaFileInvoice />, // Updated for Trial Balance
+        icon: <FaCcVisa />,
         tip: "requests.visa",
       },
       {
         href: "#",
-        labelKey: "requests.rtes",
-        icon: <FaFileInvoice />, // Updated for Trial Balance
-        tip: "requests.rtes",
+        labelKey: "requests.rtgs",
+        icon: <TbTransferVertical />,
+        tip: "requests.rtgs",
       },
       {
         href: "#",
         labelKey: "requests.foreign",
-        icon: <FaFileInvoice />, // Updated for Trial Balance
+        icon: <TbLicense />,
         tip: "requests.foreign",
       },
       {
         href: "#",
         labelKey: "requests.cbl",
-        icon: <FaFileInvoice />, // Updated for Trial Balance
+        icon: <BsFillInfoCircleFill />,
         tip: "requests.cbl",
       },
     ],
@@ -110,31 +111,31 @@ export const sideBarItemsArray = [
   {
     href: "#",
     labelKey: "localization",
-    icon: <FaUserPlus />,
+    icon: <PiMoneyBold />,
     tip: "localization",
   },
   {
     href: "#",
     labelKey: "documentary",
-    icon: <FaUserPlus />,
+    icon: <VscPreview />,
     tip: "documentary",
   },
   {
     href: "#",
     labelKey: "followUp",
-    icon: <FaUserPlus />,
+    icon: <RiChatFollowUpFill />,
     tip: "Follow Up",
   },
   {
     href: "#",
     labelKey: "settings",
-    icon: <FaUserPlus />,
+    icon: <IoIosSettings />,
     tip: "settings",
   },
   {
     href: "#",
     labelKey: "currRate",
-    icon: <FaUserPlus />,
+    icon: <MdCurrencyExchange />,
     tip: "currRate",
   },
 ];

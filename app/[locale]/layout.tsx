@@ -1,7 +1,6 @@
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import "../globals.css";
-import SideBar from "../components/SideBar/SideBar";
 import MainLayoutClient from "../components/SideBar/MainLayoutClient";
 import MainHeader from "../components/mainHeader/MainHeader";
 import logoUrl from "@/design-system/images/logo.jpeg";

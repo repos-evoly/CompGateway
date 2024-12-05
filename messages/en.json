@@ -15,7 +15,7 @@
       "guaranteeLetter":"Letter of guarantee request",
       "creditFacility":"Credit facility request",
       "visa":"visa card Request",
-      "rtes":"RTES transfer request",
+      "rtgs":"RTGS transfer request",
       "foreign":"license for foreign transfers request",
       "cbl":"CBL Inquiry Request"
     },

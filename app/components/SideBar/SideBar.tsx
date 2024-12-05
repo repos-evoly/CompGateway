@@ -9,7 +9,7 @@ import { useTranslations } from "next-intl";
 import LocaleSwitcher from "./LocaleSwitcher"; // Import LocaleSwitcher
 import { SideBarProps } from "@/types";
 
-const SideBar: React.FC<SideBarProps> = ({ isRtl }) => {
+const SideBar: React.FC<SideBarProps> = () => {
   const [isExpanded, setIsExpanded] = useState(true); // Initially expanded
   const router = useRouter();
   const { logout } = useAuthStore();

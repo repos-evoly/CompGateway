@@ -3,7 +3,6 @@
 import { ReactNode, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import SideBar from "./SideBar";
-import MainHeader from "../mainHeader/MainHeader";
 
 export default function MainLayoutClient({
   children,

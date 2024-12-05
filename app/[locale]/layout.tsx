@@ -5,17 +5,16 @@ import MainLayoutClient from "../components/SideBar/MainLayoutClient";
 import MainHeader from "../components/mainHeader/MainHeader";
 import logoUrl from "@/design-system/images/logo.jpeg";
 
-interface LocaleLayoutProps {
-  children: React.ReactNode;
-  params: { locale?: string };
-}
-
 export default async function LocaleLayout({
   children,
   params,
-}: LocaleLayoutProps) {
+}: {
+  children: React.ReactNode;
+  params: Promise<{ locale?: string }>; // Adjust to match the expected type
+}) {
   // Ensure locale is correctly awaited
-  const locale = params?.locale || "en"; // Fallback to "en" if locale is undefined
+  const resolvedParams = await params;
+  const locale = resolvedParams?.locale || "en"; // Fallback to "en" if locale is undefined
 
   try {
     // Fetch messages based on the locale

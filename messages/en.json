@@ -154,6 +154,32 @@
     "date":"Date"
 
 
+  },
+
+
+  "checkForm": {
+    "name": "Full Name",
+    "address": "Address",
+    "accNum": "Account Number",
+    "sendTo": "Please send to",
+    "book": "A book containing",
+    "checkbox": "Check",
+    "checks": "Checks",
+    "for": "For",
+    "holder": "The Holder",
+    "forUse": "For Use",
+    "branch": "Branch",
+    "specificTo": "Specific to",
+    "email": "Send by mail",
+    "savedUntil": "To be kept until claimed",
+    "erase": "(Please erase the words that are not needed)",
+    "agree": "I/We undertake to bear all responsibilities of any kind that directly fall on the bank as a result of the loss, theft, or misuse of one or all of these checks, except in cases where the bank has proceeded with the disbursement of such lost, stolen, or misused checks, or has been properly notified in writing beforehand about the loss, theft, or misuse of these checks.",
+    "date": "Date",
+    "signature": "Signature",
+    "note": "Note: The request will only be accepted with the approved bank signature and a dual signature for accounts requiring dual signatures.",
+    "checkDetails":"Check Details",
+    "checkboxSection":""
   }
+  
 
 }

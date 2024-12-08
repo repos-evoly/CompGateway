@@ -12,15 +12,17 @@ const Checkbox: React.FC<CheckboxProps> = ({
   onChange,
 }) => {
   return (
-    <label className="flex items-center text-sm font-medium text-gray-700">
-      <input
-        type="checkbox"
-        className="rtl:ml-2 ltr:mr-2"
-        checked={checked}
-        onChange={onChange}
-      />
-      {label}
-    </label>
+    <div className="flex">
+      <label className="flex items-center text-sm font-medium text-gray-700">
+        <input
+          type="checkbox"
+          className="rtl:ml-2 ltr:mr-2"
+          checked={checked}
+          onChange={onChange}
+        />
+        {label}
+      </label>
+    </div>
   );
 };
 

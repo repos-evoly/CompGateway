@@ -119,6 +119,41 @@
     "done":"Done",
     "clear":"Clear"
   },
-  "actions":"Actions"
+  "actions":"Actions",
+
+  "RTGSForm":{
+    "accountNb":"ACCCOUNT NO",
+    "name":"NAME OF APPLICANT",
+    "address":"ADDRESS",
+    "benName":"BENEFFICIRYS NAME",
+    "benAccNum":"BENEFFICIRYS ACCCOUNT NO",
+    "benBank":"BENEFFICIRYS BANK",
+    "branch":"BRANCH NAME",
+    "amount":"AMOUNT(LYD)",
+    "only":"ONLY",
+    "reniInfo":"RENITTANCEIN INFORMATION",
+    "custSignature":"Customer Signature",
+    "branchOrAgency":"Branch Manager/Agency Head",
+    "auditorSign":"Internal Auditor Signature",
+    "finSign":"Signature of Financial Intelligence Unit employee",
+    "attachments":"Attachments",
+    "invoice":"Invoice",
+    "contract":"Contract",
+    "claim":"Claim",
+    "otherDoc":"Other documents",
+    "note":"Note: Any transfer exceeding one million dinars must be approved by an employee of the bank’s Financial Information Unit.",
+    "ach":"ACH",
+    "rtgs":"RTGS",
+    "title":"مصرف التجارة و التنمية",
+    "subtitle":"الادارة العامة - بنغازي",
+    "accInfo":"Account Information",
+    "benDetails":"Beneficiary Details",
+    "payDetails":"Payment Details",
+    "footer":"",
+    "refNum":"Reference number",
+    "date":"Date"
+
+
+  }
 
 }

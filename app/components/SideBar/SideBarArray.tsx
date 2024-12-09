@@ -58,7 +58,7 @@ export const sideBarItemsArray = [
     combo: true,
     subItems: [
       {
-        href: "#",
+        href: "/checkbook",
         labelKey: "requests.checkBook",
         icon: <LiaMoneyCheckSolid />,
         tip: "requests.checkBook",
@@ -88,7 +88,7 @@ export const sideBarItemsArray = [
         tip: "requests.visa",
       },
       {
-        href: "#",
+        href: "/rtgs",
         labelKey: "requests.rtgs",
         icon: <TbTransferVertical />,
         tip: "requests.rtgs",
@@ -100,7 +100,7 @@ export const sideBarItemsArray = [
         tip: "requests.foreign",
       },
       {
-        href: "#",
+        href: "/cbl",
         labelKey: "requests.cbl",
         icon: <BsFillInfoCircleFill />,
         tip: "requests.cbl",

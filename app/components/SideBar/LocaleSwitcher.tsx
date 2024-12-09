@@ -42,7 +42,7 @@ export default function LocaleSwitcher({ isExpanded }: LocaleSwitcherProps) {
 
       setCurrentLocale(frameworkLocale); // Keep the button text consistent with the current locale
     }
-  }, [frameworkLocale]);
+  }, [frameworkLocale, currentLocale]); // Add `currentLocale` to the dependency array
 
   // Debug logs for rendering
   console.log("Rendering LocaleSwitcher:");

@@ -179,7 +179,36 @@
     "note": "Note: The request will only be accepted with the approved bank signature and a dual signature for accounts requiring dual signatures.",
     "checkDetails":"Check Details",
     "checkboxSection":""
+  },
+
+
+  "CheckRequest": {
+    "title": "Certified Check Request",
+    "branch": "Branch",
+    "branchNum": "Branch Number",
+    "date": "Date",
+    "f": "F",
+    "customerName": "Customer Name",
+    "cardNum": "Card Number",
+    "checkAmountChars": "Check Amount in Words",
+    "amount": "Amount",
+    "dirham": "Dirham",
+    "lyd": "LYD",
+    "curr": "Currency",
+    "expenses": "Expenses",
+    "totalAmount": "Total Amount",
+    "accountNum": "Account Number",
+    "beneficiary": "Beneficiary",
+    "cust1Sign": "Customer Signature 1",
+    "cust2Sign": "Customer Signature 2",
+    "cust3Sign": "Customer Signature 3",
+    "note": "Please deduct the specified amount from my account and issue a certified check for it.",
+    "filledByBank": "To be filled by the bank",
+    "checkNum": "Certified Check Number",
+    "employeeSign": "Responsible Employee's Signature",
+    "custSign": "Customer's Receipt Signature"
   }
+  
   
 
 }

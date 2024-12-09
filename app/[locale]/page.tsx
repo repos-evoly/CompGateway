@@ -1,7 +1,8 @@
 // import CBLForm from "../components/forms/CBLForm/CBLForm";
 // import RTGSForm from "../components/forms/RTGSForm/RTGSForm";
+"use client";
 
-import CheckForm from "../components/forms/CheckForm/CheckForm";
+import CheckrequestForm from "../components/forms/CheckRequestForm/CheckRequestForm";
 
 export default function HomePage() {
   return (
@@ -9,7 +10,7 @@ export default function HomePage() {
       {/* <CBLForm /> */}
       {/* <RTGSForm /> */}
       {/* hello */}
-      <CheckForm />
+      <CheckrequestForm />
     </div>
   );
 }

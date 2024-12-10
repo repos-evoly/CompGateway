@@ -182,7 +182,7 @@
   "CheckRequest":{
     "title":"طلب صك مصدق",
     "branch":"الفرع",
-    "brachNum":"رقم الفرع",
+    "branchNum":"رقم الفرع",
     "date":"التاريخ",
     "f":"ف",
     "customerName":"اسم الزبون",
@@ -203,7 +203,12 @@
     "filledByBank":"تعبأ من قبل المصرف",
     "checkNum":"رقم الصك المصدق",
     "employeeSign":"توقيع الموظف المسؤول",
-    "custSign":"توقيع الزبون بالاستلام"
+    "custSign":"توقيع الزبون بالاستلام",
+    "otherInfo":"",
+    "customerInfo":"",
+    "actions":"عمليات",
+    "amountTable":""
+
   }
 
 

@@ -5,7 +5,6 @@ export interface FieldConfig {
   title: string; // The title of the field
   inputItems?: FormItemsProps; // The props for the FormItems component
   extraTextKey?: string; // Optional key for extra text
-  useSignaturePad?: boolean; // Optional property to indicate if this field uses a signature pad
 }
 
 // Define the array of fields
@@ -383,12 +382,6 @@ export default CBLFieldsArray;
 export const CBLFooterArray: FieldConfig[] = [
   {
     type: "double",
-    title: "signatureLegalR",
-    useSignaturePad: true,
-  },
-
-  {
-    type: "double",
     title: "date",
     inputItems: {
       inputType: "date",
@@ -401,7 +394,6 @@ export const CBLFooterArray: FieldConfig[] = [
     },
     extraTextKey: "sub",
   },
-
   {
     type: "double",
     title: "name",
@@ -414,11 +406,5 @@ export const CBLFooterArray: FieldConfig[] = [
       error: [],
       required: true,
     },
-  },
-
-  {
-    type: "double",
-    title: "signatureLegalR",
-    useSignaturePad: true,
   },
 ];

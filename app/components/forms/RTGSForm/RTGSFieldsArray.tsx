@@ -5,7 +5,6 @@ export interface RTGSFieldConfig {
   fields: {
     title: string; // Field title
     inputItems?: FormItemsProps; // FormItems configuration
-    useSignaturePad?: boolean;
   }[];
 }
 
@@ -133,27 +132,9 @@ const RTGSFieldsArray: RTGSFieldConfig[] = [
       },
     ],
   },
-
   {
-    section: "footer", // Footer section for the 4 double rows
-    fields: [
-      {
-        title: "custSignature",
-        useSignaturePad: true, // Indicate that this field uses the SignaturePad
-      },
-      {
-        title: "branchOrAgency",
-        useSignaturePad: true, // Indicate that this field uses the SignaturePad
-      },
-      {
-        title: "auditorSign",
-        useSignaturePad: true, // Indicate that this field uses the SignaturePad
-      },
-      {
-        title: "finSign",
-        useSignaturePad: true, // Indicate that this field uses the SignaturePad
-      },
-    ],
+    section: "footer", // Footer section for other rows
+    fields: [],
   },
 ];
 

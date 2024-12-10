@@ -26,8 +26,8 @@ export type MainHeaderProps = {
 export type FormItemsProps = {
     label?: string;
     inputType: string;
-    inputID: string;
-    inputName: string;
+    inputID?: string;
+    inputName?: string;
     inputValue: string | number;
     disable?: boolean;
     readOnly?: boolean;

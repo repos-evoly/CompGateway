@@ -5,7 +5,6 @@ import SingleRow from "../CBLForm/SingleRow"; // Reusable SingleRow component
 import Checkbox from "../../reusable/CheckBox"; // Checkbox component
 import CheckFieldsArray from "./CheckFieldsArray"; // Import the fields array
 import { useTranslations } from "next-intl";
-import DoubleRow from "../CBLForm/DoubleRow";
 
 const CheckForm: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -147,25 +146,18 @@ const CheckForm: React.FC = () => {
       <div className="text-center text-xl font-bold mt-6">{t("erase")}</div>
       <div className="text-center text-xl font-bold mt-6">{t("agree")}</div>
 
-      <DoubleRow
-        rows={[
-          {
-            title: t("date"),
-            inputItems: {
-              inputType: "date",
-              inputID: "date",
-              inputName: "date",
-              inputValue: "", // Replace with a state or dynamic value
-              onChange: () => {}, // Replace with a function to handle the input change
-              error: [], // Add error messages if needed
-              required: true,
-            },
-          },
-          {
-            title: t("signature"),
-            useSignaturePad: true, // Render the signature pad
-          },
-        ]}
+      {/* Replace DoubleRow with SingleRow */}
+      <SingleRow
+        title={t("date")}
+        inputItems={{
+          inputType: "date",
+          inputID: "date",
+          inputName: "date",
+          inputValue: "", // Replace with a state or dynamic value
+          onChange: () => {}, // Replace with a function to handle the input change
+          error: [], // Add error messages if needed
+          required: true,
+        }}
       />
 
       <div className="text-center text-xl font-bold mt-6">{t("note")}</div>

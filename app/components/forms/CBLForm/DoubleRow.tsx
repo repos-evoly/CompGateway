@@ -16,7 +16,7 @@ const DoubleRow: React.FC<DoubleRowProps> = ({ rows }) => {
     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
       {rows.map((row, index) => (
         <SingleRow
-          key={index}
+          key={`single-${index}`}
           title={row.title}
           inputItems={row.inputItems} // Pass inputItems when provided
           extraText={row.extraText}

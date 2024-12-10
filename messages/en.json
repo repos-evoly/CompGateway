@@ -206,7 +206,13 @@
     "filledByBank": "To be filled by the bank",
     "checkNum": "Certified Check Number",
     "employeeSign": "Responsible Employee's Signature",
-    "custSign": "Customer's Receipt Signature"
+    "custSign": "Customer's Receipt Signature",
+    "otherInfo":"",
+    "customerInfo":"",
+    "actions":"Actions",
+    "amountTable":""
+
+
   }
   
   

@@ -49,7 +49,6 @@ const CBLFooter = () => {
                 extraText: field.extraTextKey
                   ? t(field.extraTextKey)
                   : undefined,
-                useSignaturePad: field.useSignaturePad ?? false, // Pass the useSignaturePad prop
               }))}
             />
           );
@@ -61,7 +60,6 @@ const CBLFooter = () => {
               title={t(group.title)}
               inputItems={group.inputItems}
               extraText={group.extraTextKey ? t(group.extraTextKey) : undefined}
-              useSignaturePad={group.useSignaturePad ?? false} // Pass the useSignaturePad prop
             />
           );
         }

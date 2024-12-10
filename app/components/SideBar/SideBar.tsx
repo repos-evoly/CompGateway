@@ -2,8 +2,6 @@
 import React, { useState } from "react";
 import { FaChevronLeft, FaChevronRight, FaSignOutAlt } from "react-icons/fa";
 import SideBarItems from "./SideBarItems";
-import { useRouter } from "@/navigation"; // Use your custom router
-import { useAuthStore } from "../../store/authStore";
 import { sideBarItemsArray } from "./SideBarArray";
 import { useTranslations } from "next-intl";
 import LocaleSwitcher from "./LocaleSwitcher"; // Import LocaleSwitcher
@@ -11,28 +9,9 @@ import { SideBarProps } from "@/types";
 
 const SideBar: React.FC<SideBarProps> = () => {
   const [isExpanded, setIsExpanded] = useState(true); // Initially expanded
-  const router = useRouter();
-  const { logout } = useAuthStore();
 
   const toggleSidebar = () => {
     setIsExpanded(!isExpanded); // Toggle the expanded/collapsed state
-  };
-
-  const handleLogout = async () => {
-    try {
-      const res = await fetch("/api/auth/logout", {
-        method: "POST",
-      });
-
-      if (res.ok) {
-        logout();
-        router.push("/login");
-      } else {
-        console.error("Failed to logout");
-      }
-    } catch (err) {
-      console.error("An error occurred while logging out:", err);
-    }
   };
 
   const t = useTranslations("sidebarItems");
@@ -84,12 +63,9 @@ const SideBar: React.FC<SideBarProps> = () => {
       </div>
 
       {/* Fixed section for LocaleSwitcher and Logout */}
-      <div className="">
+      <div>
         <LocaleSwitcher isExpanded={isExpanded} />
-        <button
-          onClick={handleLogout}
-          className="w-full flex items-center justify-center p-4 bg-info-dark text-info-light hover:bg-red-600 hover:text-white transition-all duration-300"
-        >
+        <button className="w-full flex items-center justify-center p-4 bg-info-dark text-info-light hover:bg-red-600 hover:text-white transition-all duration-300">
           <FaSignOutAlt className="mr-2" />
           {isExpanded && t("logout")}
         </button>

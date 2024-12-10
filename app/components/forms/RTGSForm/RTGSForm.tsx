@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import SingleRow from "../CBLForm/SingleRow"; // Use the SingleRow component
-import DoubleRow from "../CBLForm/DoubleRow"; // Import the DoubleRow component
 import FormType from "./FormType";
 import RTGSFieldsArray, { FormTypeFields } from "./RTGSFieldsArray"; // Import the fields array
 import ComponentsTitle from "../../reusable/ComponentsTitle";
@@ -37,9 +36,9 @@ const RTGSForm: React.FC = () => {
 
   const t = useTranslations("RTGSForm");
 
-  // Separate footer array from RTGSFieldsArray for double rows
-  const footerArray = RTGSFieldsArray.filter(
-    (section) => section.section === "footer"
+  // Remove signature pads by excluding the footer section entirely
+  const filteredFieldsArray = RTGSFieldsArray.filter(
+    (section) => section.section !== "footer"
   );
 
   return (
@@ -73,7 +72,7 @@ const RTGSForm: React.FC = () => {
       />
 
       {/* Sections */}
-      {RTGSFieldsArray.map((section, index) => (
+      {filteredFieldsArray.map((section, index) => (
         <div key={index} className="space-y-4 bg-gray-50 p-4 rounded-lg">
           <h2 className="text-lg font-semibold text-gray-800">
             {section.section ? t(section.section) : ""}
@@ -99,36 +98,6 @@ const RTGSForm: React.FC = () => {
               />
             ) : null
           )}
-        </div>
-      ))}
-
-      {/* Footer Section with DoubleRow */}
-      {footerArray.map((footerSection, index) => (
-        <div key={index} className="space-y-4 bg-gray-50 p-4 rounded-lg">
-          <h2 className="text-lg font-semibold text-gray-800">
-            {footerSection.section ? t(footerSection.section) : ""}
-          </h2>
-          <DoubleRow
-            rows={footerSection.fields.map((field) => ({
-              title: t(field.title),
-              inputItems: field.inputItems
-                ? {
-                    ...field.inputItems,
-                    inputType: field.inputItems.inputType || "text", // Default to "text" if undefined
-                    inputValue:
-                      formData[
-                        field.inputItems.inputName as keyof typeof formData
-                      ],
-                    onChange: (e) =>
-                      handleChange(
-                        field.inputItems?.inputName || "",
-                        e.target.value
-                      ),
-                  }
-                : undefined,
-              useSignaturePad: field.useSignaturePad || false,
-            }))}
-          />
         </div>
       ))}
 

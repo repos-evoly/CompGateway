@@ -26,7 +26,11 @@ export default async function LocaleLayout({
     console.log("LocaleLayout Debug - Locale:", locale, "isRtl:", isRtl);
 
     return (
-      <html className="h-full" lang={locale} dir={isRtl ? "rtl" : "ltr"}>
+      <html
+        className="h-full font-cairo"
+        lang={locale}
+        dir={isRtl ? "rtl" : "ltr"}
+      >
         <body>
           <NextIntlClientProvider messages={messages}>
             <MainHeader title={"title"} logoUrl={logoUrl} isRtl={isRtl} />

@@ -41,7 +41,7 @@ const FormItems = ({
           disabled={disable}
           required={required}
           autoComplete="off"
-          className="mt-1 p-3 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-main"
+          className="mt-1 p-3 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-main rtl:text-right ltr:text-left"
         >
           <option value="" disabled>
             Select...
@@ -65,7 +65,7 @@ const FormItems = ({
             list={`${inputID}-datalist`} // Link input with datalist
             required={required}
             autoComplete="off"
-            className="mt-1 p-3 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-main"
+            className="mt-1 p-3 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-main rtl:text-right ltr:text-left"
             disabled={disable}
             readOnly={readOnly} // Set readOnly when passed
           />
@@ -86,7 +86,7 @@ const FormItems = ({
           onKeyDown={onKeyDown} // Pass the onKeyDown prop to select
           required={required}
           autoComplete="off"
-          className="mt-1 p-3 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-main"
+          className="mt-1 p-3 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-main rtl:text-right ltr:text-left"
           disabled={disable}
           readOnly={readOnly} // Set readOnly when passed
         />

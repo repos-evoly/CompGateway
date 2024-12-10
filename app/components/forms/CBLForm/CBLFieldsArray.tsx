@@ -88,12 +88,11 @@ const CBLFieldsArray: FieldConfig[] = [
       error: [],
       required: true,
     },
-    extraTextKey: "sub",
   },
 
   {
     type: "double",
-    title: "foundingDate.title",
+    title: "accountOpening",
     inputItems: {
       inputType: "date",
       inputID: "foundingDate",
@@ -120,14 +119,13 @@ const CBLFieldsArray: FieldConfig[] = [
       error: [],
       required: true,
     },
-    extraTextKey: "sub",
   },
 
   {
     type: "double",
     title: "validatyLicense",
     inputItems: {
-      inputType: "text",
+      inputType: "date",
       inputID: "validatyLicense",
       inputName: "validatyLicense",
       inputValue: "",
@@ -150,14 +148,13 @@ const CBLFieldsArray: FieldConfig[] = [
       error: [],
       required: true,
     },
-    extraTextKey: "sub",
   },
 
   {
     type: "double",
     title: "validatyRegister",
     inputItems: {
-      inputType: "text",
+      inputType: "date",
       inputID: "validatyRegister",
       inputName: "validatyRegister",
       inputValue: "",
@@ -180,14 +177,13 @@ const CBLFieldsArray: FieldConfig[] = [
       error: [],
       required: true,
     },
-    extraTextKey: "sub",
   },
 
   {
     type: "double",
     title: "validatyCode",
     inputItems: {
-      inputType: "text",
+      inputType: "date",
       inputID: "validatyCode",
       inputName: "validatyCode",
       inputValue: "",
@@ -210,14 +206,13 @@ const CBLFieldsArray: FieldConfig[] = [
       error: [],
       required: true,
     },
-    extraTextKey: "sub",
   },
 
   {
     type: "double",
     title: "validatyChamber",
     inputItems: {
-      inputType: "text",
+      inputType: "date",
       inputID: "validatyChamber",
       inputName: "validatyChamber",
       inputValue: "",
@@ -241,7 +236,6 @@ const CBLFieldsArray: FieldConfig[] = [
       error: [],
       required: true,
     },
-    extraTextKey: "sub",
   },
 
   {
@@ -256,7 +250,6 @@ const CBLFieldsArray: FieldConfig[] = [
       error: [],
       required: true,
     },
-    extraTextKey: "sub",
   },
 
   {
@@ -285,14 +278,13 @@ const CBLFieldsArray: FieldConfig[] = [
       error: [],
       required: true,
     },
-    extraTextKey: "sub",
   },
 
   {
     type: "single",
     title: "birthDate",
     inputItems: {
-      inputType: "text",
+      inputType: "date",
       inputID: "birthDate",
       inputName: "birthDate",
       inputValue: "",
@@ -315,14 +307,13 @@ const CBLFieldsArray: FieldConfig[] = [
       error: [],
       required: true,
     },
-    extraTextKey: "sub",
   },
 
   {
     type: "double",
     title: "passportIssuance",
     inputItems: {
-      inputType: "text",
+      inputType: "date",
       inputID: "passportIssuance",
       inputName: "passportIssuance",
       inputValue: "",
@@ -336,7 +327,7 @@ const CBLFieldsArray: FieldConfig[] = [
     type: "double",
     title: "passportExpiry",
     inputItems: {
-      inputType: "text",
+      inputType: "date",
       inputID: "passportExpiry",
       inputName: "passportExpiry",
       inputValue: "",
@@ -359,7 +350,6 @@ const CBLFieldsArray: FieldConfig[] = [
       error: [],
       required: true,
     },
-    extraTextKey: "sub",
   },
   {
     type: "double",
@@ -373,7 +363,6 @@ const CBLFieldsArray: FieldConfig[] = [
       error: [],
       required: true,
     },
-    extraTextKey: "sub",
   },
 ];
 

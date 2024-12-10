@@ -3,7 +3,7 @@ import { NextRequest } from 'next/server';
 
 const intlMiddleware = createMiddleware({
   locales: ['en', 'ar'],
-  defaultLocale: 'en',
+  defaultLocale: 'ar',
 });
 
 export default function middleware(request: NextRequest) {
@@ -14,7 +14,5 @@ export const config = {
   matcher: [
     '/',
     '/(ar|en)/:path*',
-    '/dashboard/:path*',
-    '/admin/:path*',
   ],
 };

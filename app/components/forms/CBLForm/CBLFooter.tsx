@@ -64,11 +64,6 @@ const CBLFooter = () => {
           );
         }
       })}
-
-      {/* Span added below everything */}
-      <span className="block mt-6 text-sm text-gray-500">
-        {t("addionalLine")}
-      </span>
     </div>
   );
 };

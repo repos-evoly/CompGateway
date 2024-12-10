@@ -38,6 +38,9 @@ export default {
           dark: colors.text.dark,
         },
       },
+      fontFamily: {
+        cairo: ["Cairo", "sans-serif"], 
+      },
     },
   },
   plugins: [],

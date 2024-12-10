@@ -64,7 +64,7 @@ export const sideBarItemsArray = [
         tip: "requests.checkBook",
       },
       {
-        href: "#",
+        href: "/checkRequest",
         labelKey: "requests.certifiedCheck",
         icon: <PiCertificateBold />,
         tip: "requests.certifiedCheck",

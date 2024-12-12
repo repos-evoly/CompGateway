@@ -16,7 +16,7 @@ const Sidebar = () => {
   const [sidebarOpen, setSidebarOpen] = useState(true); // Sidebar toggle state
   const [submenuOpen, setSubmenuOpen] = useState<number | null>(null); // Manage submenu states
 
-  // Manually set the current locale (default to "en")
+  // Determine current locale
   const currentLocale = pathname.startsWith("/ar") ? "ar" : "en";
 
   const toggleSubmenu = (id: number) => {
@@ -33,7 +33,9 @@ const Sidebar = () => {
     <div
       className={`${
         sidebarOpen ? "w-64" : "w-16"
-      } bg-secondary-dark text-white h-screen transition-all duration-300 text-sm`}
+      } bg-secondary-dark text-white h-screen transition-all duration-300 text-sm ${
+        currentLocale === "ar" ? "rtl" : "ltr"
+      }`}
     >
       {/* Sidebar Header */}
       <div className="flex items-center justify-between p-4">
@@ -53,7 +55,12 @@ const Sidebar = () => {
       <Divider />
 
       {/* Sidebar Items */}
-      <nav className="flex flex-col p-4 space-y-2">
+      <nav
+        className="flex flex-col p-4 space-y-2 overflow-y-auto h-[calc(100vh-80px)]"
+        style={{
+          direction: currentLocale === "ar" ? "rtl" : "ltr",
+        }}
+      >
         {sidebarItems.map((item) => (
           <LinkItem
             key={item.id}

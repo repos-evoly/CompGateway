@@ -43,3 +43,8 @@ export type FormItemsProps = {
   
   };
 
+
+  export type DropdownType = {
+    value: number | string;
+    label: string;
+  };

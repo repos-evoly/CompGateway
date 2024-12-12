@@ -1,9 +1,13 @@
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import "../globals.css";
-import MainLayoutClient from "../components/SideBar/MainLayoutClient";
+import { Cairo } from "next/font/google";
 import MainHeader from "../components/mainHeader/MainHeader";
 import logoUrl from "@/design-system/images/logo.jpeg";
+import SideBar2 from "../components/SideBar/SideBar2";
+
+// Importing Cairo font from Google Fonts
+const cairo = Cairo({ subsets: ["latin", "arabic"] });
 
 export default async function LocaleLayout({
   children,
@@ -12,29 +16,34 @@ export default async function LocaleLayout({
   children: React.ReactNode;
   params: Promise<{ locale?: string }>; // Adjust to match the expected type
 }) {
-  // Ensure locale is correctly awaited
   const resolvedParams = await params;
   const locale = resolvedParams?.locale || "en"; // Fallback to "en" if locale is undefined
 
   try {
-    // Fetch messages based on the locale
     const messages = await getMessages({ locale });
-
-    // Determine directionality (RTL or LTR)
     const isRtl = locale === "ar";
-
-    console.log("LocaleLayout Debug - Locale:", locale, "isRtl:", isRtl);
 
     return (
       <html
-        className="h-full font-cairo"
+        className={`h-full ${cairo.className}`}
         lang={locale}
         dir={isRtl ? "rtl" : "ltr"}
       >
-        <body>
+        <body className="h-full flex flex-col">
           <NextIntlClientProvider messages={messages}>
+            {/* Main Header */}
             <MainHeader title={"title"} logoUrl={logoUrl} isRtl={isRtl} />
-            <MainLayoutClient isRtl={isRtl}>{children}</MainLayoutClient>
+
+            {/* Main Content Layout */}
+            <div className="flex flex-1 h-full">
+              {/* Sidebar */}
+              <SideBar2 />
+
+              {/* Page Content */}
+              <main className="flex-1 p-4 overflow-auto bg-gray-100">
+                {children}
+              </main>
+            </div>
           </NextIntlClientProvider>
         </body>
       </html>
@@ -42,7 +51,6 @@ export default async function LocaleLayout({
   } catch (error) {
     console.error("LocaleLayout Error:", error);
 
-    // Handle errors gracefully with a fallback
     return (
       <html className="h-full" lang="en" dir="ltr">
         <body>

@@ -42,7 +42,7 @@ const RTGSForm: React.FC = () => {
   );
 
   return (
-    <div className="border border-gray-300 rounded-lg shadow-lg max-w-4xl mx-auto bg-white p-6 space-y-6">
+    <div className="border border-gray-300 rounded-lg shadow-lg  mx-auto bg-white p-6 space-y-6">
       <ComponentsTitle title={t("title")} subtitle={t("subtitle")} />
       {/* ACH/RTGS Checkboxes */}
       <FormType

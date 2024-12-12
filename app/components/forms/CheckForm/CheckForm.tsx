@@ -20,7 +20,7 @@ const CheckForm: React.FC = () => {
   const t = useTranslations("checkForm");
 
   return (
-    <div className="border border-gray-300 rounded-lg shadow-lg max-w-4xl mx-auto bg-white p-6 space-y-6">
+    <div className="border border-gray-300 rounded-lg shadow-lg  mx-auto bg-white p-6 space-y-6">
       {/* Sections */}
       {CheckFieldsArray.map((section, index) => (
         <div key={index} className="space-y-4 bg-gray-50 p-4 rounded-lg">

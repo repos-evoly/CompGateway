@@ -1,8 +1,8 @@
 {
   "sidebarItems": {
     "statementOfAccount":"Statement of account",
-    "title": "",
-    "transfer":{
+    "title":"Companies Gateway",
+        "transfer":{
         "label": "Transfers",
         "inBank": "Transfers within the bank",
         "betweenBanks": "Transfers between banks",
@@ -26,7 +26,7 @@
     "currRate":"Currency exchange rates",
 
     "logout":"Logout"
-  },
+   },
   "mainHeader":{
     "title":"Companies Gateway"
   },

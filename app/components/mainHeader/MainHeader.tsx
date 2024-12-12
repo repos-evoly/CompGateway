@@ -7,7 +7,7 @@ const MainHeader: React.FC<MainHeaderProps> = ({ logoUrl, isRtl }) => {
   const t = useTranslations("mainHeader");
 
   return (
-    <header className="w-full h-20 flex items-center px-5 bg-info-dark">
+    <header className="w-full h-28 flex items-center px-8 bg-info-dark text-white">
       <div
         className={`flex-shrink-0 ${
           isRtl ? "order-2 ml-auto" : "order-0 mr-auto"
@@ -16,13 +16,11 @@ const MainHeader: React.FC<MainHeaderProps> = ({ logoUrl, isRtl }) => {
         <Image
           src={logoUrl}
           alt="Logo"
-          width={48} // Adjust width as necessary
-          height={48} // Adjust height as necessary
+          width={72} // Increased width
+          height={72} // Increased height
         />
       </div>
-      <h1 className="flex-1 text-center text-2xl font-semibold">
-        {t("title")}
-      </h1>
+      <h1 className="flex-1 text-center text-xl font-bold">{t("title")}</h1>
     </header>
   );
 };

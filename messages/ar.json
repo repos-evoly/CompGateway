@@ -1,7 +1,7 @@
 {
   "sidebarItems": {
     "statementOfAccount":"كشف حساب",
-    "title": "",
+    "title":"منظومة بوابة الشركات",
     "transfer":{
         "label": "التحاويل",
         "inBank": "تحويل داخل المصرف",
